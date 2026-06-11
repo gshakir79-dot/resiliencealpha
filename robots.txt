@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /issue-template.html
+
+Sitemap: https://resiliencealpha.com/sitemap.xml

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe — Resilience Alpha Research</title>
+  <meta name="description" content="Subscribe to Resilience Alpha Research. Free tier available. Analyst $15/month, Intelligence $120/year." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Resilience Alpha Research" />
+  <meta property="og:title" content="Subscribe — Resilience Alpha Research" />
+  <meta property="og:description" content="Geopolitical intelligence for serious investors. Free tier available." />
+  <meta property="og:image" content="https://resiliencealpha.com/og-image.png" />
+  <meta property="og:url" content="https://resiliencealpha.com/subscribe.html" />
+  <link rel="canonical" href="https://resiliencealpha.com/subscribe.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Analytics: paste your Plausible/Fathom/GA snippet here before launch -->
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;">
+        <img src="logo.png" alt="Resilience Alpha Research" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html" class="active">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="subscribe.html" class="btn nav-cta">Subscribe</a>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container">
+      <h4 style="margin-bottom:16px;">Subscribe</h4>
+      <h1>Intelligence, delivered.</h1>
+      <p class="page-hero-sub">Pick a tier, enter your email, and the next issue lands in your inbox.</p>
+    </div>
+  </section>
+
+  <!-- ── Signup ── -->
+  <section>
+    <div class="container" style="display:flex; gap:48px; flex-wrap:wrap; align-items:flex-start;">
+
+      <div class="subscribe-form-card" style="flex:1; min-width:320px;">
+        <h3>Join Resilience Alpha</h3>
+        <p class="form-sub">No spam, no sponsors. Unsubscribe anytime.</p>
+
+        <div class="tier-select" id="tierSelect">
+          <div class="tier-option selected" data-tier="free">
+            <div class="tier-name">Free</div>
+            <div class="tier-price">$0</div>
+          </div>
+          <div class="tier-option" data-tier="analyst">
+            <div class="tier-name">Analyst</div>
+            <div class="tier-price">$15/mo</div>
+          </div>
+          <div class="tier-option" data-tier="intelligence">
+            <div class="tier-name">Intelligence</div>
+            <div class="tier-price">$120/yr</div>
+          </div>
+        </div>
+
+        <form id="subscribeForm">
+          <div class="field-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Subscribe →
+          </button>
+          <div class="form-success" id="formSuccess"></div>
+        </form>
+      </div>
+
+      <div style="flex:1; min-width:300px;">
+        <h4 style="margin-bottom:20px;">What you get</h4>
+        <ul class="pricing-features" style="margin-bottom:0;">
+          <li><strong>Free</strong> — one issue per month, geopolitical flash alerts, public archive access</li>
+          <li><strong>Analyst ($15/mo)</strong> — full issue access (2–3 per month), complete ticker coverage and investment thesis, conflict scenario watch list, munitions replenishment tracker, email Q&amp;A</li>
+          <li><strong>Intelligence ($120/yr)</strong> — everything in Analyst with two months free, founding member status, early access to new position coverage</li>
+        </ul>
+        <div class="accountability-box" style="margin-top:32px;">
+          <p style="margin-bottom:0;">Every thesis is on the record. When we're wrong, we say so — read the audit in <a href="issue-01.html">Issue #1</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer style="margin-top:80px;">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Resilience Alpha Research" class="footer-logo-img" />
+          <p>Geopolitical intelligence for serious investors.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Publication</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="archive.html">Archive</a></li>
+              <li><a href="issue-01.html">Issue #1</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Subscribe</h4>
+            <ul>
+              <li><a href="subscribe.html">Free tier</a></li>
+              <li><a href="subscribe.html">Analyst — $15/mo</a></li>
+              <li><a href="subscribe.html">Intelligence — $120/yr</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Nothing published by Resilience Alpha Research constitutes financial advice or a solicitation to buy or sell any security. The author may hold positions in securities discussed. All content is for informational and educational purposes only. Past analysis does not guarantee future results. Always conduct your own research before making any investment decision. Marcus Vail is a pseudonym used for publishing purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    // ── Tier selection ──
+    var selectedTier = 'free';
+    document.querySelectorAll('.tier-option').forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        document.querySelectorAll('.tier-option').forEach(function (o) { o.classList.remove('selected'); });
+        opt.classList.add('selected');
+        selectedTier = opt.dataset.tier;
+      });
+    });
+
+    // ── Signup handling ──
+    // PAYMENT INTEGRATION: replace the placeholder URLs below with real
+    // Stripe Payment Links (dashboard.stripe.com → Payment Links), or point
+    // the whole flow at Substack/Ghost/ConvertKit once an account exists.
+    var PAYMENT_LINKS = {
+      analyst: null,       // e.g. 'https://buy.stripe.com/xxxx'
+      intelligence: null   // e.g. 'https://buy.stripe.com/yyyy'
+    };
+
+    document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('email').value.trim();
+      var success = document.getElementById('formSuccess');
+
+      // Store the signup locally until a real email provider is connected.
+      // Swap this block for a fetch() to your provider's API when ready.
+      var signups = JSON.parse(localStorage.getItem('ra_signups') || '[]');
+      signups.push({ email: email, tier: selectedTier, at: new Date().toISOString() });
+      localStorage.setItem('ra_signups', JSON.stringify(signups));
+
+      if (selectedTier !== 'free' && PAYMENT_LINKS[selectedTier]) {
+        window.location.href = PAYMENT_LINKS[selectedTier] + '?prefilled_email=' + encodeURIComponent(email);
+        return;
+      }
+
+      success.textContent = selectedTier === 'free'
+        ? '✓ You\'re in. The next free issue will arrive at ' + email + '.'
+        : '✓ Thanks, ' + email + '. Paid checkout is launching soon — you\'re on the founding list.';
+      success.classList.add('show');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

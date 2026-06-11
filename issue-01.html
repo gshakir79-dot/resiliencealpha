@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Chip Nobody Talks About — Resilience Alpha Research</title>
+  <meta name="description" content="High-bandwidth memory is the bottleneck for the entire AI industry. Three companies control the supply. One is American. The ticker is MU." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Resilience Alpha Research" />
+  <meta property="og:title" content="The Chip Nobody Talks About (That Runs Everything You Use)" />
+  <meta property="og:description" content="High-bandwidth memory is the bottleneck for the entire AI industry. Three companies control the supply. One is American. The ticker is MU." />
+  <meta property="og:image" content="https://resiliencealpha.com/og-image.png" />
+  <meta property="og:url" content="https://resiliencealpha.com/issue-01.html" />
+  <link rel="canonical" href="https://resiliencealpha.com/issue-01.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="article.css" />
+
+  <!-- Analytics: paste your Plausible/Fathom/GA snippet here before launch -->
+</head>
+<body>
+
+  <div class="reading-progress" id="progress"></div>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;">
+        <img src="logo.png" alt="Resilience Alpha Research" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="subscribe.html" class="btn nav-cta">Subscribe</a>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Article Hero ── -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-label">
+        <span class="issue-badge">Issue #1</span>
+        <span class="free-badge">Free Article</span>
+        <span class="article-category">Silicon Sovereignty</span>
+      </div>
+      <h1>The Chip Nobody Talks About<br />(That Runs Everything You Use)</h1>
+      <div class="article-byline">
+        <span class="byline-author">Marcus Vail</span>
+        <span class="byline-dot"></span>
+        <span class="byline-meta">Resilience Alpha Research</span>
+        <span class="byline-dot"></span>
+        <span class="byline-meta">May 2025</span>
+        <span class="byline-dot"></span>
+        <span class="byline-meta">8 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Article Body ── -->
+  <div class="container">
+    <div class="article-body">
+
+      <p class="lede">This morning you probably checked your phone. Maybe you asked an AI something. Maybe you used Google, ran a search, opened a map, streamed something on your commute. At some point today you almost certainly interacted with an artificial intelligence system, even if you did not notice it.</p>
+
+      <p>None of that happened because of Nvidia.</p>
+
+      <p>Nvidia is the company that gets the credit. Jensen Huang is the face on the magazine covers. The H100, the Blackwell chip, the data centres stacked with GPUs worth tens of thousands of dollars each. That story is real and it is well told. But there is a component that sits inside every one of those GPUs, without which the entire system stops functioning, and almost nobody outside the semiconductor industry can name it.</p>
+
+      <p>It is called high-bandwidth memory. The people who build AI infrastructure call it HBM. Three companies in the world make nearly all of it. Two of them are Korean. The third is based in Boise, Idaho, and it might be the most overlooked infrastructure investment of the decade.</p>
+
+      <h2>Why the GPU Gets the Glory and HBM Gets Nothing</h2>
+
+      <p>Here is the simplest way to understand what HBM does.</p>
+
+      <p>Imagine a GPU as a kitchen with a hundred chefs working at full speed. The chefs are extraordinary. They can execute any recipe, combine any ingredients, produce any dish at a pace no single human cook could match. But they can only cook what the pantry supplies. If the pantry delivers ingredients slowly, the chefs wait. It does not matter how talented they are. The kitchen's output is determined by the speed of supply, not the skill of the cooks.</p>
+
+      <p>HBM is the pantry. It sits physically stacked on top of the GPU and feeds it data at speeds that standard memory cannot come close to matching. The AI models running on your phone, generating your search results, powering the chatbot your company just deployed, require this data delivered at extraordinary speed. When HBM is fast and plentiful, the GPU performs as advertised. When HBM is constrained, the whole system slows down regardless of how advanced the processor underneath it is.</p>
+
+      <p>Demis Hassabis runs Google DeepMind. He oversees some of the most sophisticated AI research on earth and has direct visibility into what Google spends its infrastructure budget on. Earlier this year he stated publicly that HBM is the bottleneck for the entire AI industry. Not compute. Not electricity. Not engineers. Memory. The person with perhaps the clearest view of what physically limits artificial intelligence development said the constraint is a chip that most people have never heard of.</p>
+
+      <h2>Three Companies. The Entire World's Supply.</h2>
+
+      <p>Samsung, SK Hynix, and Micron Technology collectively control over 95 percent of global production of DRAM, the category of memory from which HBM is derived. The HBM market specifically is even more concentrated. SK Hynix holds somewhere between 53 and 57 percent of global HBM supply. Samsung controls roughly 35 percent. Micron has the rest, around 11 to 21 percent depending on methodology, and it is growing fast.</p>
+
+      <p>Those three companies have sold out their entire 2026 production. All of it. SK Hynix disclosed in its most recent earnings call that purchase commitments from hyperscalers — the Microsoft, Google, Amazon, and Meta scale buyers — now extend beyond three years. Every unit of HBM that SK Hynix will produce through 2028 is already spoken for. Micron said the same about its 2026 capacity months ago.</p>
+
+      <p>There is no spot market. There is no warehouse of excess chips waiting for a buyer. If you are a technology company trying to build AI infrastructure and you do not already have a supply agreement, you are in a queue and the queue is very long.</p>
+
+      <p>This has a predictable effect on prices. DRAM prices rose roughly 60 percent across 2025. They are expected to rise another 30 to 40 percent across 2026. HBM gross margins at the manufacturers are running between 60 and 70 percent. To put that in context, those are software company margins being generated by a factory that runs 24 hours a day processing silicon wafers.</p>
+
+      <h2>Why Micron Is the One Worth Owning</h2>
+
+      <p>Of the three companies that control this market, only one is American. Only one is incorporated in the United States, subject to US law, eligible for US government funding, and aligned with US national interest in a way that carries real meaning beyond marketing language.</p>
+
+      <p>Micron received confirmation of 6.14 billion dollars in direct US government funding under the CHIPS and Science Act. It is building a new semiconductor facility in Clay, New York and expanding operations in Boise. The US government has designated Micron as a strategic national asset. That word, <em>strategic</em>, is doing significant work here. It means that a government with enormous resources and a clear geopolitical motive has decided that Micron must succeed, and has committed taxpayer money to ensure it does.</p>
+
+      <p>The reason that motive exists is geography.</p>
+
+      <p>SK Hynix and Samsung are both headquartered in South Korea. South Korea is a close US ally and a remarkably stable democracy. It is also located 35 miles from the North Korean border, well within range of significant conventional military capability. It is also a nation whose semiconductor industry generates output so critical to global AI infrastructure that any serious disruption — from military threat, natural disaster, or even prolonged labour action — would immediately affect every major technology company operating on earth.</p>
+
+      <p>That risk is not likely. But it is not zero, and in a world where supply chain fragility has become the dominant theme of industrial policy, concentration of 80 to 90 percent of global HBM supply in a single country represents exactly the kind of structural vulnerability that governments are now spending heavily to reduce. Micron is the instrument of that reduction. It is the hedge that Washington has decided it cannot afford not to own.</p>
+
+      <h2>The Business Without the Geopolitics</h2>
+
+      <p>Even if you set the geopolitical argument entirely aside, the Micron business case is cleaner than it has been in years.</p>
+
+      <p>The company made a decision several years ago to step back from commodity consumer memory and redirect its manufacturing capacity toward data centre applications. At the time this read as a concession of market share. In retrospect it looks like a deliberate pivot into the highest-margin segment in memory's history. HBM is not a commodity. It is a specialised, technically complex product made by three companies with sold-out order books, record margins, and customers so dependent on their supply that hyperscalers are negotiating three-year forward contracts just to secure allocation.</p>
+
+      <p>Micron also lost access to the Chinese critical infrastructure market in 2023 when Beijing imposed restrictions in response to US export controls on advanced chips. This cost the company real revenue in the short term. What it also did was eliminate a significant portion of low-margin, politically exposed business and force management to concentrate entirely on the highest-value customers in the world. The China ban, intended as punishment, functioned as a portfolio upgrade.</p>
+
+      <h2>What This Means</h2>
+
+      <p>The chip at the centre of the artificial intelligence economy is not the one getting the headlines. It is smaller, less understood, and manufactured by a three-player oligopoly that has quietly accumulated some of the most durable pricing power in the technology sector.</p>
+
+      <p>One of those three players is American. It has government backing, a growing share of the most critical segment in memory, sold-out production, and margins it has never previously sustained.</p>
+
+      <p>It is also the only name on that list that trades on a US exchange and qualifies for most retail brokerage accounts.</p>
+
+      <p>You used the product today. You did not know it had a name. Now you do.</p>
+
+      <div class="ticker-reveal">
+        <p>The company covered in this issue:</p>
+        <div class="ticker-tag">MU — Micron Technology</div>
+        <p style="margin-top:16px; margin-bottom:0; font-size:0.85rem;">Nasdaq-listed · CHIPS Act recipient · HBM market share: ~11–21% and growing</p>
+      </div>
+
+      <div class="article-nav">
+        <a href="archive.html">← All issues</a>
+        <a href="subscribe.html">Subscribe →</a>
+      </div>
+
+      <div class="article-disclaimer">
+        <p>Marcus Vail is a pseudonym. The author may hold a position in MU at time of publication. Nothing in this article constitutes financial advice. Always conduct your own research before making investment decisions.</p>
+        <p>Resilience Alpha Research publishes 2 to 3 issues per month. Paid subscribers receive full ticker coverage, conflict scenario analysis, and access to the complete archive.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Subscribe CTA ── -->
+  <section class="article-subscribe">
+    <div class="article-subscribe-inner">
+      <h4>Resilience Alpha Research</h4>
+      <h2>More issues like this, every month.</h2>
+      <p>Paid subscribers get full ticker coverage, the conflict scenario watch list, and 2–3 issues per month. Two months free on the annual plan.</p>
+      <div class="cta-row">
+        <a href="subscribe.html" class="btn btn-ghost btn-arrow">Subscribe free</a>
+        <a href="subscribe.html" class="btn btn-primary btn-arrow">Analyst — $15/month</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Resilience Alpha Research" class="footer-logo-img" />
+          <p>Geopolitical intelligence for serious investors.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Publication</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="archive.html">Archive</a></li>
+              <li><a href="issue-01.html">Issue #1</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Subscribe</h4>
+            <ul>
+              <li><a href="subscribe.html">Free tier</a></li>
+              <li><a href="subscribe.html">Analyst — $15/mo</a></li>
+              <li><a href="subscribe.html">Intelligence — $120/yr</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Nothing published by Resilience Alpha Research constitutes financial advice or a solicitation to buy or sell any security. The author may hold positions in securities discussed. All content is for informational and educational purposes only. Past analysis does not guarantee future results. Always conduct your own research before making any investment decision. Marcus Vail is a pseudonym used for publishing purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    // Reading progress bar
+    const bar = document.getElementById('progress');
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrolled = doc.scrollTop;
+      const total = doc.scrollHeight - doc.clientHeight;
+      bar.style.width = (scrolled / total * 100) + '%';
+    });
+  </script>
+
+</body>
+</html>
