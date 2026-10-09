@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resilience Alpha Research</title>
+    <link>https://resiliencealpha.com/</link>
+    <description>Geopolitical intelligence for investors — one issue every day. Where conflict meets capital.</description>
+    <language>en</language>
+    <atom:link href="https://resiliencealpha.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Chip Nobody Talks About (That Runs Everything You Use)</title>
+      <link>https://resiliencealpha.com/issue-01.html</link>
+      <guid>https://resiliencealpha.com/issue-01.html</guid>
+      <pubDate>Thu, 15 May 2025 07:00:00 -0400</pubDate>
+      <category>Silicon Sovereignty</category>
+      <description>High-bandwidth memory is the bottleneck for the entire AI industry. Three companies control the world&apos;s supply. Two are Korean. The third is based in Boise, Idaho — and it might be the most overlooked infrastructure investment of the decade.</description>
+    </item>
+  </channel>
+</rss>
