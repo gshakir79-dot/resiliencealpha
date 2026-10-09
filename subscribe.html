@@ -89,6 +89,7 @@
           <div class="field-row">
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
             Subscribe →
@@ -100,8 +101,8 @@
       <div style="flex:1; min-width:300px;">
         <h4 style="margin-bottom:20px;">What you get</h4>
         <ul class="pricing-features" style="margin-bottom:0;">
-          <li><strong>Free</strong> — one issue per month, geopolitical flash alerts, public archive access</li>
-          <li><strong>Analyst ($15/mo)</strong> — full issue access (2–3 per month), complete ticker coverage and investment thesis, conflict scenario watch list, munitions replenishment tracker, email Q&amp;A</li>
+          <li><strong>Free</strong> — one issue every day, geopolitical flash alerts, public archive access</li>
+          <li><strong>Analyst ($15/mo)</strong> — full issue access, every day, complete ticker coverage and investment thesis, conflict scenario watch list, munitions replenishment tracker, email Q&amp;A</li>
           <li><strong>Intelligence ($120/yr)</strong> — everything in Analyst with two months free, founding member status, early access to new position coverage</li>
         </ul>
         <div class="accountability-box" style="margin-top:32px;">
@@ -172,22 +173,32 @@
       var email = document.getElementById('email').value.trim();
       var success = document.getElementById('formSuccess');
 
-      // Store the signup locally until a real email provider is connected.
-      // Swap this block for a fetch() to your provider's API when ready.
-      var signups = JSON.parse(localStorage.getItem('ra_signups') || '[]');
-      signups.push({ email: email, tier: selectedTier, at: new Date().toISOString() });
-      localStorage.setItem('ra_signups', JSON.stringify(signups));
-
-      if (selectedTier !== 'free' && PAYMENT_LINKS[selectedTier]) {
-        window.location.href = PAYMENT_LINKS[selectedTier] + '?prefilled_email=' + encodeURIComponent(email);
-        return;
-      }
-
-      success.textContent = selectedTier === 'free'
-        ? '✓ You\'re in. The next free issue will arrive at ' + email + '.'
-        : '✓ Thanks, ' + email + '. Paid checkout is launching soon — you\'re on the founding list.';
-      success.classList.add('show');
-      this.reset();
+      // Send the signup to Web3Forms — delivers to the Resilience Alpha inbox.
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          access_key: '8381b0d8-ac57-4ec5-b1df-0661e0e66039',
+          subject: 'New Resilience Alpha subscriber',
+          from_name: 'Resilience Alpha',
+          email: email,
+          tier: selectedTier
+        })
+      }).then(function (res) {
+        if (!res.ok) { throw new Error('signup failed'); }
+        if (selectedTier !== 'free' && PAYMENT_LINKS[selectedTier]) {
+          window.location.href = PAYMENT_LINKS[selectedTier] + '?prefilled_email=' + encodeURIComponent(email);
+          return;
+        }
+        success.textContent = selectedTier === 'free'
+          ? '✓ You\'re in. The next issue lands at ' + email + '.'
+          : '✓ Thanks, ' + email + '. Paid checkout is launching soon — you\'re on the founding list.';
+        success.classList.add('show');
+        document.getElementById('subscribeForm').reset();
+      }).catch(function () {
+        success.textContent = 'Something went wrong — please try again in a moment.';
+        success.classList.add('show');
+      });
     });
   </script>
 </body>
