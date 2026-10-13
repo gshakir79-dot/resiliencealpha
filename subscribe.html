@@ -194,8 +194,11 @@
           email: email,
           tier: selectedTier
         })
-      }).then(function (res) {
-        if (!res.ok) { throw new Error('signup failed'); }
+      }).catch(function () {
+        // The backup inbox notification is non-critical: the Buttondown
+        // registration above is what subscribes the reader. Never let a
+        // backup failure show the reader an error.
+      }).then(function () {
         if (selectedTier !== 'free' && PAYMENT_LINKS[selectedTier]) {
           window.location.href = PAYMENT_LINKS[selectedTier] + '?prefilled_email=' + encodeURIComponent(email);
           return;
@@ -205,9 +208,6 @@
           : '✓ Thanks, ' + email + '. Paid checkout is launching soon — you\'re on the founding list.';
         success.classList.add('show');
         document.getElementById('subscribeForm').reset();
-      }).catch(function () {
-        success.textContent = 'Something went wrong — please try again in a moment.';
-        success.classList.add('show');
       });
     });
   </script>
