@@ -173,7 +173,17 @@
       var email = document.getElementById('email').value.trim();
       var success = document.getElementById('formSuccess');
 
-      // Send the signup to Web3Forms — delivers to the Resilience Alpha inbox.
+      // Register the subscriber with Buttondown (the email list) — the
+      // embed-subscribe endpoint is a plain form POST; response is opaque.
+      fetch('https://buttondown.com/api/emails/embed-subscribe/resiliencealpha', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'email=' + encodeURIComponent(email)
+      }).catch(function () {});
+
+      // Also send the signup to Web3Forms — delivers to the Resilience Alpha
+      // inbox as a backup record (keeps the selected tier on file).
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -191,7 +201,7 @@
           return;
         }
         success.textContent = selectedTier === 'free'
-          ? '✓ You\'re in. The next issue lands at ' + email + '.'
+          ? '✓ You\'re in. One quick step: check ' + email + ' for a confirmation link, and the next issue is yours.'
           : '✓ Thanks, ' + email + '. Paid checkout is launching soon — you\'re on the founding list.';
         success.classList.add('show');
         document.getElementById('subscribeForm').reset();
