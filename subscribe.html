@@ -85,10 +85,11 @@
           </div>
         </div>
 
-        <form id="subscribeForm">
+        <form id="subscribeForm" class="embeddable-buttondown-form" action="https://buttondown.com/api/emails/embed-subscribe/resiliencealpha" method="post" target="popupwindow">
           <div class="field-row">
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <input type="hidden" name="embed" value="1" />
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
@@ -169,18 +170,20 @@
     };
 
     document.getElementById('subscribeForm').addEventListener('submit', function (e) {
-      e.preventDefault();
+      // Do NOT preventDefault and do NOT call Buttondown with fetch():
+      // Buttondown's docs require the embed-subscribe endpoint to be the
+      // action of a standard HTML form, because readers sometimes have to
+      // follow Buttondown's response to pass a CAPTCHA check or fix a
+      // validation error. A fire-and-forget fetch silently drops those
+      // flows (that is how signups were lost), so the form itself POSTs
+      // to Buttondown in a popup window.
       var email = document.getElementById('email').value.trim();
       var success = document.getElementById('formSuccess');
 
-      // Register the subscriber with Buttondown (the email list) — the
-      // embed-subscribe endpoint is a plain form POST; response is opaque.
-      fetch('https://buttondown.com/api/emails/embed-subscribe/resiliencealpha', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'email=' + encodeURIComponent(email)
-      }).catch(function () {});
+      // Pre-open the popup window the form posts into (Buttondown's
+      // official embed pattern), so the confirmation lands in a tab the
+      // reader can see and complete.
+      window.open('https://buttondown.com/resiliencealpha', 'popupwindow');
 
       // Also send the signup to Web3Forms — delivers to the Resilience Alpha
       // inbox as a backup record (keeps the selected tier on file).
@@ -195,8 +198,8 @@
           tier: selectedTier
         })
       }).catch(function () {
-        // The backup inbox notification is non-critical: the Buttondown
-        // registration above is what subscribes the reader. Never let a
+        // The backup inbox notification is non-critical: the form's own
+        // POST to Buttondown is what subscribes the reader. Never let a
         // backup failure show the reader an error.
       }).then(function () {
         if (selectedTier !== 'free' && PAYMENT_LINKS[selectedTier]) {
