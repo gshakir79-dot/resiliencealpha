@@ -7,6 +7,14 @@
     <language>en</language>
     <atom:link href="https://resiliencealpha.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Viasat Won the Layer Between the Satellites</title>
+      <link>https://resiliencealpha.com/issue-31.html</link>
+      <guid>https://resiliencealpha.com/issue-31.html</guid>
+      <pubDate>Sun, 08 Nov 2026 07:00:00 -0500</pubDate>
+      <category>Defense Industrial</category>
+      <description>Space Systems Command announced on November 5 a competitive contract for Viasat with a $450 million ceiling and a $115 million initial task order to design, field and scale the Mission Operations Center for the Space Data Network Backbone. The satellites belong to SpaceX and a roster of other vendors. The layer that routes their data now belongs to Viasat.</description>
+    </item>
+    <item>
       <title>Two-Thirds Delivered, Three Days Left on the Paper</title>
       <link>https://resiliencealpha.com/issue-30.html</link>
       <guid>https://resiliencealpha.com/issue-30.html</guid>
@@ -243,13 +251,5 @@
       <description>The Pentagon committed up to $6.3 billion for one kind of missile on October 8. It is the third such award in three months, and the three total roughly $90 billion. Demand is not the question. Congress is.</description>
     </item>
 
-    <item>
-      <title>The Chip Nobody Talks About (That Runs Everything You Use)</title>
-      <link>https://resiliencealpha.com/issue-01.html</link>
-      <guid>https://resiliencealpha.com/issue-01.html</guid>
-      <pubDate>Thu, 15 May 2025 07:00:00 -0400</pubDate>
-      <category>Silicon Sovereignty</category>
-      <description>High-bandwidth memory is the bottleneck for the entire AI industry. Three companies control the world&apos;s supply. Two are Korean. The third is based in Boise, Idaho — and it might be the most overlooked infrastructure investment of the decade.</description>
-    </item>
   </channel>
 </rss>
