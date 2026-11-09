@@ -7,6 +7,14 @@
     <language>en</language>
     <atom:link href="https://resiliencealpha.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>500,000 Tonnes of Diesel Promised, Zero Discharged</title>
+      <link>https://resiliencealpha.com/issue-32.html</link>
+      <guid>https://resiliencealpha.com/issue-32.html</guid>
+      <pubDate>Mon, 09 Nov 2026 07:00:00 -0500</pubDate>
+      <category>Energy Leverage</category>
+      <description>Al Jazeera reported on November 7 that no Russian diesel had reached the United States under the October 9 deal between Donald Trump and Vladimir Putin, one month after Treasury licensed the trade. Four tracked tankers loaded at Primorsk. Two turned away, a third swapped New York for 'for orders,' and US diesel still hit a record $6.28 a gallon on election day.</description>
+    </item>
+    <item>
       <title>Viasat Won the Layer Between the Satellites</title>
       <link>https://resiliencealpha.com/issue-31.html</link>
       <guid>https://resiliencealpha.com/issue-31.html</guid>
@@ -242,14 +250,6 @@
     </item>
 
 
-    <item>
-      <title>The $90 Billion Missile Reorder</title>
-      <link>https://resiliencealpha.com/issue-02.html</link>
-      <guid>https://resiliencealpha.com/issue-02.html</guid>
-      <pubDate>Sat, 10 Oct 2026 07:00:00 -0400</pubDate>
-      <category>Defense Industrial</category>
-      <description>The Pentagon committed up to $6.3 billion for one kind of missile on October 8. It is the third such award in three months, and the three total roughly $90 billion. Demand is not the question. Congress is.</description>
-    </item>
 
   </channel>
 </rss>
