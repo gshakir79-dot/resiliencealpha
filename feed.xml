@@ -7,6 +7,14 @@
     <language>en</language>
     <atom:link href="https://resiliencealpha.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>TSMC Put $1 Billion Into Its Own Customers</title>
+      <link>https://resiliencealpha.com/issue-35.html</link>
+      <guid>https://resiliencealpha.com/issue-35.html</guid>
+      <pubDate>Thu, 12 Nov 2026 07:00:00 -0500</pubDate>
+      <category>Silicon Sovereignty</category>
+      <description>TSMC filed record October revenue of NT$586.89 billion with the SEC on November 10, up 59.7 percent from a year earlier. Its board then approved up to $500 million each in Anthropic and OpenAI, alongside $40.93 billion in capital appropriations.</description>
+    </item>
+    <item>
       <title>Brent Priced a Truce That Shipping Has Not Signed</title>
       <link>https://resiliencealpha.com/issue-34.html</link>
       <guid>https://resiliencealpha.com/issue-34.html</guid>
@@ -237,14 +245,6 @@
       <pubDate>Wed, 14 Oct 2026 07:00:00 -0400</pubDate>
       <category>Silicon Sovereignty</category>
       <description>FCC 26-50 took effect October 13. A Covered List chip inside any brand of device now blocks that device from the U.S. market. Auditable suppliers collect the premium.</description>
-    </item>
-    <item>
-      <title>The IMF Just Normalized $95 Oil</title>
-      <link>https://resiliencealpha.com/issue-05.html</link>
-      <guid>https://resiliencealpha.com/issue-05.html</guid>
-      <pubDate>Tue, 13 Oct 2026 07:00:00 -0400</pubDate>
-      <category>Energy Leverage</category>
-      <description>The IMF raised world growth to 3.1% on Tuesday and assumed oil averages $95.74 a barrel in 2026. Read the internals and the upgrade looks like concentration, not resilience. The Hormuz reopening is already in the price.</description>
     </item>
 
 
