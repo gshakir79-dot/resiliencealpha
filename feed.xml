@@ -7,6 +7,14 @@
     <language>en</language>
     <atom:link href="https://resiliencealpha.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Japan Is Paying for America's Foundry in Malta</title>
+      <link>https://resiliencealpha.com/issue-37.html</link>
+      <guid>https://resiliencealpha.com/issue-37.html</guid>
+      <pubDate>Sat, 14 Nov 2026 07:00:00 -0500</pubDate>
+      <category>Silicon Sovereignty</category>
+      <description>GlobalFoundries broke ground on November 13, 2026 on a new fab in Malta, New York, the first under a United States and Japan initiative worth up to $21 billion. Japan provides the investment, the first fab costs about $10 billion and comes online in 2029, and the output is trusted chips for cars, factories and infrastructure, not leading edge AI processors.</description>
+    </item>
+    <item>
       <title>The Seabed Got an Endorsement, Not a Mine</title>
       <link>https://resiliencealpha.com/issue-36.html</link>
       <guid>https://resiliencealpha.com/issue-36.html</guid>
@@ -237,14 +245,6 @@
       <pubDate>Fri, 16 Oct 2026 07:00:00 -0400</pubDate>
       <category>Silicon Sovereignty</category>
       <description>Bloomberg reported on October 16 that Taiwan will add AI servers and advanced semiconductors to its controlled items list, making unauthorized shipments to China a criminal offense under the Foreign Trade Act.</description>
-    </item>
-    <item>
-      <title>Europe Is Trading a Sanction for a Supplier</title>
-      <link>https://resiliencealpha.com/issue-07.html</link>
-      <guid>https://resiliencealpha.com/issue-07.html</guid>
-      <pubDate>Thu, 15 Oct 2026 07:00:00 -0400</pubDate>
-      <category>Critical Minerals</category>
-      <description>Bloomberg reported on October 14 that the EU discussed lifting restrictions on a Chinese firm sanctioned over Russia, in exchange for China relieving Sindlhauser, a small German supplier in the ASML chain that Beijing sanctioned in July.</description>
     </item>
 
 
